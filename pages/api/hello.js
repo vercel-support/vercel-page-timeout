@@ -4,8 +4,8 @@ export default async function handler(req, res) {
   
   try {
     await Promise.race([
-      delay(90000), // 90 seconds
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 90000)),
+      delay(64000), // 90 seconds
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 64000)),
       // your function here, e.g. fetching some data
     ]);
 
